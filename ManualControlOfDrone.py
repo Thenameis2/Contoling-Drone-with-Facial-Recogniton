@@ -16,6 +16,7 @@ frame_read = tello.get_frame_read()
 
 tello.takeoff()
 
+
 while True:
     # In reality you want to display frames in a seperate thread. Otherwise
     #  they will freeze while the drone moves.

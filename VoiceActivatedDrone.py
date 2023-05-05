@@ -35,16 +35,16 @@ def analyze_command(command):
                tello.takeoff()
           elif command == "land":
                tello.land()
-          elif command == "move up":
+          elif command == "up":
                tello.move_up(30)
-          elif command == "move down":
+               tello.move_up(30)
+          elif command == "down":
                tello.move_down(30)
-          elif command == "move left":
+          elif command == "left":
                tello.move_left(30)
-          elif command == "move right":
+          elif command == "right":
                tello.move_right(30)
-          elif command == "do a flip": 
-               tello.flip()
+          elif command == "flip": 
                tello.flip_right()
           else:
                print("I don't understand the command")

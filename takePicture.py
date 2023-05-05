@@ -1,6 +1,6 @@
 # In DJITelloPy repository
 
-mport cv2
+import cv2
 from djitellopy import Tello
 
 tello = Tello()
