@@ -4,10 +4,10 @@ import cvzone
 import cv2
 from cvzone.PoseModule import PoseDetector
 
-cap = cv2.VideoCapture("Resources/Videos/1.mp4")
+cap = cv2.VideoCapture(0)
 detector = PoseDetector()
 
-shirtFolderPath = "Resources/Shirts"
+shirtFolderPath = "/Users/mihiretujackson/Documents/GitHub/Contoling-Drone-with-Facial-Recogniton/ClothingTryOn/Resources/MyShirts"
 listShirts = os.listdir(shirtFolderPath)
 # print(listShirts)
 fixedRatio = 262 / 190  # widthOfShirt/widthOfPoint11to12
