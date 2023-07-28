@@ -1,9 +1,10 @@
 import os
+
 import cvzone
 import cv2
 from cvzone.PoseModule import PoseDetector
 
-cap = cv2.VideoCapture("Resources/Videos/1.mp4")
+cap = cv2.VideoCapture(0)
 detector = PoseDetector()
 
 shirtFolderPath = "Resources/Shirts"
@@ -68,4 +69,4 @@ while True:
             counterLeft = 0
 
     cv2.imshow("Image", img)
-    cv2.waitKey(1) 
+    cv2.waitKey(1)
