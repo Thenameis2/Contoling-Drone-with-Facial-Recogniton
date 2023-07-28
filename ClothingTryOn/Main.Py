@@ -18,6 +18,9 @@ counterRight = 0
 counterLeft = 0
 selectionSpeed = 10
 
+if listShirts:
+    listShirts = listShirts[1:]
+
 while True:
     success, img = cap.read()
     img = detector.findPose(img)
@@ -65,4 +68,4 @@ while True:
             counterLeft = 0
 
     cv2.imshow("Image", img)
-    cv2.waitKey(1)
+    cv2.waitKey(1) 
